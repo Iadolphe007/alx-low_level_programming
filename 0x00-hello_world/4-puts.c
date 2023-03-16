@@ -1,5 +1,4 @@
-#!/bin/bash
-#include<studio.h>
+#include<stdio.h>
 int main(void)
 	{
 	char prog = ""Programming is like building a multilingual puzzle"
