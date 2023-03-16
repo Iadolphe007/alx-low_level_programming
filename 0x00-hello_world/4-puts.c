@@ -2,7 +2,7 @@
 int main(void)
 	{
 	char prog = "Programming is like building a multilingual puzzle";
-		puts(" %s \n", prog);
+		puts(prog);
 		return 0;
 
 	}
