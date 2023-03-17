@@ -15,11 +15,11 @@ int main(void)
 		{
 			for (k = 2; k < 10; k++)
 			{
-				if (i != j && i != k && k != j)
+				if (i < j && j < k)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
 					if (i + j + k != 24)
 					{
 						putchar(',');
