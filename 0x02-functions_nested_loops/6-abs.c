@@ -9,11 +9,10 @@
 
 int _abs(int a)
 {
-	int a;
 
 	if (a < 0)
 		a = -(a);
-	else if
-		a = 1;
+	else if (a >= 0)
+		a = a;
 	return (a);
 }
