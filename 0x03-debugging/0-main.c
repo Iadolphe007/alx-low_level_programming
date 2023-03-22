@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * main - retrun number if is postive or negative
+ * Return: 0
+ */
 
 int main(void)
 {
