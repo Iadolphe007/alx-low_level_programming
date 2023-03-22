@@ -20,9 +20,11 @@ int main(void)
 	{
 		c += b;
 		if (b % 2 == 0)
+		{
 			sum += c;
 			b = c - b;
-			a++
+			a++;
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
