@@ -7,8 +7,8 @@
 int main(void)
 {
 	int a;
-	int b;
-	int c;
+	unsigned long b;
+	unsigned long c;
 
 	a = 0;
 	b = 1;
@@ -17,14 +17,14 @@ int main(void)
 	while (a < 98)
 	{
 		if (a == 0)
-			printf("%d", b);
+			printf("% lu", b);
 		else if (a == 1)
-			printf(", %d", c);
+			printf(", %lu", c);
 		else
 		{
 			c += b;
 			b = c - b;
-			printf(", %d", c);
+			printf(", %lu", c);
 		}
 	}
 	printf("\n");
