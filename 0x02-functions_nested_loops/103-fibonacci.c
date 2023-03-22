@@ -23,8 +23,8 @@ int main(void)
 		{
 			sum += c;
 			b = c - b;
-		{
-		a++;
+			a++;
+		}
 	}
 	printf("%ld\n", sum);
 	return (0);
