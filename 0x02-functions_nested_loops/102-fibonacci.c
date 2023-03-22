@@ -9,8 +9,8 @@
 int main(void)
 {
 	int a;
-	int b;
-	int c;
+	long b;
+	long c;
 
 	a = 0;
 	b = 1;
@@ -19,14 +19,14 @@ int main(void)
 	while (a < 50)
 	{
 		if (a == 0)
-			printf("%d", b);
+			printf("%ld", b);
 		else if (a == 1)
-			printf(",%d", c);
+			printf(",%ld", c);
 		else
 		{
 			c += b;
 			b = c - b;
-			printf(", %d", c);
+			printf(", %ld", c);
 		}
 		a++;
 	}
