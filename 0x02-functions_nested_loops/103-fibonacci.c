@@ -11,10 +11,10 @@ int main(void)
 	long c;
 	long sum;
 
-	sum = c;
 	a = 0;
 	b = 1;
 	c = 2;
+	sum = c;
 
 	while (c + b < 4000000)
 	{
