@@ -16,10 +16,10 @@ int main(void)
 	b = 1;
 	c = 2;
 
-	while (b + c < 4000000)
+	while (c + b < 4000000)
 	{
 		c += b;
-		if (b % 2 == 0)
+		if (c % 2 == 0)
 		{
 			sum += c;
 			b = c - b;
