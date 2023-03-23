@@ -1,15 +1,17 @@
 #include <stdio.h>
-
+/**
+ * main - function retrun fizz buzz
+ * Return: always o
+ */
 
 
 
 int main(void)
 {
-	
 	int i;
 
 	for (i = 1; i <= 100; i++)
-		if(i % 3 ==0 && i % 5 !=0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
 			printf("Fizz");
 		}
