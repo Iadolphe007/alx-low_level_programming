@@ -12,24 +12,23 @@
 
 char *rot13(char *str)
 {
-	char *p = str;
-	char i;
+	char c;
 
-
-	while (*P != '\0')
+	while (*str)
 	{
-		i = *p;
-
-		if (i >= 'a' && i <= 'z')
+		c = *str;
+		if (isalpha(c))
 		{
-			i = ((i - 'a' + 13) % 26) + 'a';
+			if ((c >= 'a' && c <= 'm') || (c >= 'A' && c <= 'M'))
+			{
+				*str = c + 13;
+			}
+			else
+			{
+				*str = c - 13;
+			}
 		}
-		else if (i >= 'A' && i <= 'z')
-		{
-			i = ((i - 'A' + 13) % 26) + 'A';
-		}
-		*p = i;
-		p++;
+		str++;
 	}
-	return (str);
+	return(str);
 }
