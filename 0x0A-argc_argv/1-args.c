@@ -16,10 +16,10 @@ int main(int argc, char *argv[])
 
 	if (argc == 0)
 	{
-		count = 0;	
+		count = 0;
 	}
 	else
-		count = printf("%d\n", (argc-1));
+		count = printf("%d\n", (argc - 1));
 
 	return (count);
 }
