@@ -3,7 +3,7 @@
 
 /**
  * main - function
- * Return: always 0
+ * Return: count
  * @argc: counter
  * @argv: vector
  */
@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 	if (argc == 0)
 	{
 		count = 0;
+		printf("\n");
 	}
 	else
 		count = printf("%d\n", (argc - 1));
