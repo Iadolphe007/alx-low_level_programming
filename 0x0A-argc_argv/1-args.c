@@ -10,17 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-	int count;
+	(void)argv;
 
-	count = 0;
+	printf("%d\n", argc - 1);
 
-	if (argc == 0)
-	{
-		count = 0;
-		printf("\n");
-	}
-	else
-		count = printf("%d\n", (argc - 1));
-
-	return (count);
+	return (0);
 }
