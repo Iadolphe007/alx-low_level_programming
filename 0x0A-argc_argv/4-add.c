@@ -4,7 +4,7 @@
 
 /**
 * main - function
-* Return: always 0
+* Return: sum
 * @argc: counter
 * @argv: vector
 */
