@@ -21,12 +21,13 @@ char *_strdup(char *str)
 	}
 	len = strlen(str);
 
-	new_string = (char *)malloc((len) * sizeof(char));
+	new_string = (char *)malloc((len + 1) * sizeof(char));
 
 	if (new_string == NULL)
 	{
 		return (NULL);
 	}
-	memcpy(new_string, str, len);
+	memcpy(new_string, str, len + 1);
+
 	return (new_string);
 }
