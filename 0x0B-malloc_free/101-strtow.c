@@ -1,8 +1,6 @@
-#include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 /**
  * strtow - splits a string into words
  * @str: string paramenter
@@ -15,62 +13,42 @@ char **strtow(char *str)
 	char **words;
 	int word_count;
 	char *p;
-	int i;
 	char *word;
 	char *start;
-	int len;
-	int j;
+	int i, j;
 
 	word_count = 0;
 	p = str;
-	i = 0;
-
 	if (str == NULL || *str == '\0')
 		return (NULL);
-	while (*p != '\0')
+	for (*p = str; *p != '\0'; p++)
 	{
-		while (*p == ' ')
-			p++;
-		if (*p != '\0')
-		{
+		if (*p != ' ' && (*(p + 1) == ' ' || *(p + 1) == '\0'))
 			word_count++;
-			while (*p != '\0' && *p != ' ')
-			{
-				p++;
-			}
-		}
 	}
 	words = malloc((word_count + 1) * sizeof(char *));
 	if (words == NULL)
 		return (NULL);
-	while (*p != '\0')
+	for (*p = str; *p != '\0';)
 	{
 		while (*p == ' ')
 			p++;
-		if (*p != '\0')
+		if (*p == '\0')
+			break;
+		while (*p != ' ' && *p != '\0')
+			p++;
+		words[i] = malloc((p - start + 1) * sizeof(char));
+		if (words[i] == NULL)
 		{
-			start = p;
-			while (*p != '\0' && *p != ' ')
-			{
-				p++;
-			}
-			len = p - start;
-			word = malloc((len + 1) * sizeof(char));
-			if (word == NULL)
-			{
-				for (j = 0; j < i; j++)
-				{
-					free(words[j]);
-				}
-				free(words);
-				return (NULL);
-			}
-			strncpy(word, start, len);
-			word[len] = '\0';
-			words[i] = word;
-			i++;
+			for (j = 0; j < i; j++)
+				free(words[j]);
+			free(words);
+			return (NULL);
 		}
+		strncpy(words[i], start, p - start);
+		words[i][p - start] = '\0';
+		i++;
 	}
-	words[i] = NULL;
+	word[i] = NULL;
 	return (words);
 }
