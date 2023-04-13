@@ -15,6 +15,8 @@ int is_positive_number(char *num)
 
 	if (strlen(num) == 0)
 		return (0);
+	if (num[0] == '-')
+		return (0);
 	for (i = 0; i < strlen(num); i++)
 	{
 		if (!isdigit(num[i]))
@@ -49,7 +51,7 @@ int main(int argc, char **argv)
 		fprintf(stderr, "Error\n");
 		exit(98);
 	}
-	result = atoll(num1) * atoll(num2);
+	result = strtoll(num1, NULL, 10) * strtoll(num2, NULL, 10);
 	printf("%ld\n", result);
 	return (0);
 }
