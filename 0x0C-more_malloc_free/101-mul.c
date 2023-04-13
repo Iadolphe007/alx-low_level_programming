@@ -3,8 +3,13 @@
 #include <string.h>
 #include <ctype.h>
 
+/**
+ * is_positive_number - check for positive integer
+ * @num: first arg
+ * Return: 1
+ */
 
-int is_positive_number(char* num)
+int is_positive_number(char *num)
 {
 	size_t i;
 
@@ -19,8 +24,14 @@ int is_positive_number(char* num)
 		return (0);
 	return (1);
 }
+/**
+ * main - checks the number of arguments
+ * @argv: vector
+ * @argc: count
+ * Return: 0
+ */
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
 	char *num1, *num2;
 	long result;
