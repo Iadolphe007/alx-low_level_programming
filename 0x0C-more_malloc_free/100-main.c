@@ -20,7 +20,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 	{
 		if (i % 10)
 		{
-			printf(" ")
+			printf(" ");
 		}
 		if (!(i % 10) && i)
 		{
