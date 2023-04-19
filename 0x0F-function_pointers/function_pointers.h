@@ -1,4 +1,5 @@
 #ifndef HEADER_FILE
+#include <stddef.h>
 #define HEADER_FILE
 
 int _putchar(char c);
