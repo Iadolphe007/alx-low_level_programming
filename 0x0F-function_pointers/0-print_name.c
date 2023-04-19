@@ -9,6 +9,5 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	printf("My name is %s. ", name);
 	f(name);
 }
