@@ -29,12 +29,7 @@ int main(int argc, char *argv[])
 	arr = (char *)main;
 	for (i = 0; i < bytes; i++)
 	{
-		if (i == bytes - 1)
-		{
-			printf("%02hhx", arr[i]);
-			break;
-		}
-		printf("%02hhx\n", arr[i]);
+		printf("%02hhx%c", arr[i], i == bytes - 1 ? '\n' : ' ');
 	}
 	printf("\n");
 	return (0);
