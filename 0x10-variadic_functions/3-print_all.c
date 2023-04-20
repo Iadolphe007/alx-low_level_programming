@@ -39,7 +39,7 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 				break;
 		}
-		if (*format && printed)
+		if (*frmt && printed)
 			printf(", ");
 		printed = 1;
 	}
