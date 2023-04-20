@@ -10,10 +10,11 @@ void print_all(const char * const format, ...)
 {
 	va_list args;
 	char *s, c;
-	int i;
+	int i, printed;
 	float f;
 	const char *frmt = format;
 
+	printed = 0;
 	va_start(args, format);
 	while (*frmt)
 	{
@@ -38,8 +39,9 @@ void print_all(const char * const format, ...)
 				printf("%s", s);
 				break;
 		}
-		if (*format)
+		if (*format && printed)
 			printf(", ");
+		printed = 1;
 	}
 	printf("\n");
 	va_end(args);
