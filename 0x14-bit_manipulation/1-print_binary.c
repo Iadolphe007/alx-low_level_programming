@@ -28,6 +28,6 @@ void print_binary(unsigned long int n)
 	for (i = 0; i < bit; i++)
 	{
 		_putchar((n & num) ? '1' : '0');
-		num >>=1;
+		num >>= 1;
 	}
 }
