@@ -5,7 +5,7 @@
  * get_bit - print int a given index
  * @index: index to print
  * @n: parameter
- * Returns: the value of the bit at index
+ * Return: the value of the bit at index
  */
 
 
