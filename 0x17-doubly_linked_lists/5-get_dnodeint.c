@@ -4,7 +4,8 @@
 #include "lists.h"
 /**
  * get_dnodeint_at_index - get node at given index
- * @index: index to get node from
+ * @index: index to get node fro
+ * @head: pointer to the first nodem
  * Return: return nth node
  */
 
