@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint - prints all the elements of a dlistint_t
+ * dlistint_len - prints all the elements of a dlistint_t
  * @h: pointer to head of doubly linked list
  * Return: element od dlistint_t
  */
