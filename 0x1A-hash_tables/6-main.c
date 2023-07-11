@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	hast_table_t *ht;
+	hash_table_t *ht;
 	char *key;
 	char *value;
 
