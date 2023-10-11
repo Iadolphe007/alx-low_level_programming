@@ -7,7 +7,6 @@
  * Return: index of value or -1
  */
 int jump_search(int *array, size_t size, int value)
-int jump_search(int *array, size_t size, int value)
 {
 	size_t min = 0, max = sqrt(size), y;
 
